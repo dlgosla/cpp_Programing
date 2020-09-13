@@ -1,11 +1,12 @@
-#define MAXSIZE 5;
+#define MAXSIZE 5
+#include "ItemType.h"
 #include<iostream>
 using namespace std;
 
-template<class T>
-class List {
+
+class ArrayList{
 private:
-	T m_Array[MAXSIZE];
+	ItemType m_Array[MAXSIZE];
 	int m_Length;
 	int m_CurPointer;
 
@@ -13,8 +14,8 @@ public:
 	void MakeEmpty();
 	int GetLength();
 	bool isFull();
-	int Add(T data);
+	int Add(ItemType data);
 	void ReseList();
-	int GetNextItem(T& data);
+	int GetNextItem(ItemType& data);
 };
 
