@@ -11,11 +11,15 @@ private:
 	int m_CurPointer;
 
 public:
+	bool isEmpty();
+	int Get(ItemType& data);
+	int Delete(ItemType data);
+	int Replace(ItemType data);
 	void MakeEmpty();
 	int GetLength();
 	bool isFull();
 	int Add(ItemType data);
-	void ReseList();
+	void ResetList();
 	int GetNextItem(ItemType& data);
 };
 
